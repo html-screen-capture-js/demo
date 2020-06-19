@@ -5047,6 +5047,11 @@ html-minifier-terser@^5.0.1:
     relateurl "^0.2.7"
     terser "^4.6.3"
 
+html-screen-capture-js@^1.0.43:
+  version "1.0.43"
+  resolved "https://registry.yarnpkg.com/html-screen-capture-js/-/html-screen-capture-js-1.0.43.tgz#f3fab07089c48a97cf45439ddd71d11e4fbc7379"
+  integrity sha512-DdHRya4U4wu7S9pj/yasgy/dxeQztLuehNyCBoSpo6nBPQJ31QLHjMBlsZf/4kY4cFFwi5azhs1VtoEP443JWg==
+
 html-webpack-plugin@4.0.0-beta.11:
   version "4.0.0-beta.11"
   resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-4.0.0-beta.11.tgz#3059a69144b5aecef97708196ca32f9e68677715"
