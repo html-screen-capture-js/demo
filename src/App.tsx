@@ -1,20 +1,20 @@
 import React, { useEffect } from "react";
 import "./App.css";
-import { capture } from "html-screen-capture-js";
+import { capture, OutputType } from "html-screen-capture-js";
 
 function App() {
   const onCaptureClick = () => {
-    const docText: unknown = capture("string", document, {
+    const docText = capture(OutputType.STRING, document, {
       attrKeyValuePairsOfIgnoredElements: {
         id: "content-to-ignore",
       },
     });
 
-    const myblob = new Blob([docText as string], {
+    const blob = new Blob([docText as string], {
       type: "text/html",
     });
 
-    const url = window.URL.createObjectURL(myblob);
+    const url = window.URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.style.display = "none";
     a.href = url;
